@@ -41,14 +41,16 @@ function App() {
             Bringing your ideas to life through custom 3D printing — from
             prototypes to personalized gear, made with precision and passion."
           </p>
-          <div className="mt-4 flex gap-x-3">
-            <button className="bg-white px-3 py-1 rounded-lg">Sign Up</button>
-            <button className="bg-orangish px-3 py-1 rounded-lg text-white">
-              Get Started
+          <div className="mt-4 flex gap-x-3 relative">
+            <button className="bg-white px-3 py-1 rounded-lg cursor-pointer hover:bg-[hsl(0_0%_97%)]">
+              Contact
+            </button>
+            <button className="bg-orangish px-3 py-1 rounded-lg cursor-pointer hover:bg-orangish/60 text-white">
+              See More
             </button>
           </div>
           <img
-            className="absolute top-[-35px] right-[20px]"
+            className="absolute top-[-35px] right-[20px] z-[-1]"
             src="vector-4.svg"
             alt=""
           />
