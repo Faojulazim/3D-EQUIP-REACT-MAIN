@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Gallery from "./components/Gallery";
+import About from "./components/About";
 
 function App() {
   const [matchesHeight, setMatchesHeight] = useState(false);
@@ -22,7 +23,6 @@ function App() {
   return (
     <>
       <div className="relative px-5 md:px-10 xl:px-15 2xl:px-30">
-        {" "}
         <div className="absolute inset-0 -z-10 h-full w-full bg-whitish bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-size-[14px_24px]  md:bg-size-[20px_20px]"></div>{" "}
         <div className="relative min-h-[100vh] flex flex-col items-center justify-center">
           {/* shadow-[1px_8px_30px_-10px_#000]/20 */}
@@ -136,8 +136,9 @@ function App() {
               />
             </section>
           </div>
-        </div>{" "}
+        </div>
         <Gallery />
+        <About />
       </div>
     </>
   );
